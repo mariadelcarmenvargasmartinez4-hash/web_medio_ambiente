@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center mb-5 text-success">Estrategia de las 3 R</h2>
+<div class="row g-4">
+    <div class="col-md-4 text-center">
+        <div class="p-4 border rounded shadow-sm h-100">
+            <h3 class="h4">Reducir</h3>
+            <p>Disminuir el consumo de productos y energía.</p>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="p-4 border rounded shadow-sm h-100">
+            <h3 class="h4 text-warning">Reutilizar</h3>
+            <p>Darle un nuevo uso a los objetos antes de tirarlos.</p>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="p-4 border rounded shadow-sm h-100">
+            <h3 class="h4 text-primary">Reciclar</h3>
+            <p>Procesar materiales para crear nuevos productos.</p>
+        </div>
+    </div>
+</div>
+<div class="mt-5">
+    <img src="{{ url_for('static', filename='images/reciclaje.jpg') }}" class="img-fluid rounded w-100" style="max-height: 900px; object-fit: cover;">
+</div>
+{% endblock %}

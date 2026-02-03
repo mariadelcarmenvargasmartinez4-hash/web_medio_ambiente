@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row align-items-center hero-section rounded shadow-sm p-4">
+    <div class="col-md-6">
+        <h1 class="display-4 fw-bold text-success">Importancia del Medio Ambiente</h1>
+        <p class="lead">El medio ambiente es el espacio en el que se desarrolla la vida. Cuidarlo no es una opción, es una necesidad para nuestra supervivencia.</p>
+    </div>
+    <div class="col-md-6 text-center">
+        <img src="{{ url_for('static', filename='images/ambiente.jpg') }}" class="img-fluid rounded shadow" alt="Medio ambiente">
+    </div>
+</div>
+{% endblock %}
